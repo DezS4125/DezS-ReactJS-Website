@@ -1,6 +1,10 @@
-import React from "react";
+interface Props {
+  children: ReactNode;
+}
 
-const NavBar = () => {
+import React, { Children, ReactNode } from "react";
+
+const NavBar = ({ children }: Props) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -68,6 +72,7 @@ const NavBar = () => {
                 </a>
               </li>
             </ul>
+            {children}
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"

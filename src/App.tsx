@@ -8,8 +8,9 @@ const App = () => {
   };
   return (
     <div data-bs-theme={webTheme}>
-      <NavBar></NavBar>
-      <Button onClick={() => toggleWebTheme()}>ChangeTheme</Button>
+      <NavBar>
+        <Button onClick={() => toggleWebTheme()}>ChangeTheme</Button>
+      </NavBar>
     </div>
   );
 };
