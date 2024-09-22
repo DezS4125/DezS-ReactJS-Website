@@ -4,12 +4,19 @@ interface Props {
 
 import { ReactNode } from "react";
 import "../css/NavBar.css";
+import { useNavigate, useLocation } from "react-router-dom";
+
 const NavBar = ({ children }: Props) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const handleNavigate = (route: string) => {
+    navigate(route);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" onClick={() => handleNavigate("/")}>
             DezS
           </a>
           <button
@@ -26,13 +33,24 @@ const NavBar = ({ children }: Props) => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a
+                  className={
+                    "nav-link " + (location.pathname === "/" && "active")
+                  }
+                  aria-current="page"
+                  onClick={() => handleNavigate("/")}
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
+                <a
+                  className={
+                    "nav-link " + (location.pathname === "/apps" && "active")
+                  }
+                  onClick={() => handleNavigate("apps")}
+                >
+                  Apps
                 </a>
               </li>
               <li className="nav-item dropdown">

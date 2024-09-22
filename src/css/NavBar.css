@@ -3,3 +3,6 @@
     margin-left: 4%;
     font-family: Poppins;
 }
+.nav-link{
+  cursor: pointer;
+}

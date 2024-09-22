@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import Button from "./components/Button";
+import Apps from "./pages/Apps";
 
 import "./App.css";
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <div id="page-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="apps" element={<Apps />} />
           </Routes>
         </div>
       </Router>
