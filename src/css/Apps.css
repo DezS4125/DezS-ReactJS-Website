@@ -1,0 +1,9 @@
+#apps-page-root{
+    background-image: url("../assets/kali-linux-wallpaper-v6.png");
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display:flex;
+}

@@ -1,11 +1,16 @@
 interface Props {
-  children: ReactNode;
+  children?: ReactNode;
+  id?: string;
 }
-import { Children, ReactNode } from "react";
+import { ReactNode } from "react";
 import "../css/GreyCenteredFlat.css";
 
-const GreyCenteredFlat = ({ children }: Props) => {
-  return <div id="GreyCenteredFlat">{children}</div>;
+const GreyCenteredFlat = ({ children, id }: Props) => {
+  return (
+    <div className="GreyCenteredFlat" id={id}>
+      {children}
+    </div>
+  );
 };
 
 export default GreyCenteredFlat;

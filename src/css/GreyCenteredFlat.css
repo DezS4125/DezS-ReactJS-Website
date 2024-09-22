@@ -1,10 +1,8 @@
-#GreyCenteredFlat{
-    height: 100%;
-    width: 50%;
-    background-color: rgba(139, 134, 134, 0.95);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 5%;
-    text-align: center;
+.GreyCenteredFlat{
+    min-width: 100px;
+    min-height: 100px;
+    background-color: rgba(139, 134, 134, 0.85);
+    border-radius: 10px;
     flex-grow: 1;
+    margin: 50px 50px 50px 50px;
 }
