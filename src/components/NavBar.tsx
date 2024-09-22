@@ -3,14 +3,14 @@ interface Props {
 }
 
 import { ReactNode } from "react";
-
+import "../css/NavBar.css";
 const NavBar = ({ children }: Props) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            DezS
           </a>
           <button
             className="navbar-toggler"

@@ -6,4 +6,52 @@
     flex-grow: 1;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    display: grid;
+    grid-template-areas: 
+    "topbar topbar topbar"
+    "leftsidebar content sidebar"
+    "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.3fr 3fr 0.3fr;
+
+    font-family: sans-serif;
+}
+
+#content{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(139, 134, 134, 0.95);
+    grid-area: content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "image"
+    "content2"
+    "footer";
+    grid-template-rows: 1fr 2fr 0.5fr 0.5fr;
+    place-items: center;
+}
+
+#home-page-header{
+    grid-area: header;
+    margin-top: 15px;
+    text-align:center;
+    width: 400px;
+}
+
+#image{
+    grid-area: image;
+
+}
+
+#click-button{
+    background-color: green;
+    width: fit-content;
+    height: fit-content;
+    grid-area: content2;
 }
