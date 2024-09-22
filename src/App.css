@@ -1,0 +1,18 @@
+:root{
+    /* background-image: url(https://c4.wallpaperflare.com/wallpaper/567/12/970/linux-kali-linux-nethunter-photoshop-dragon-wallpaper-preview.jpg);
+    background-size: cover; */
+}
+body{
+}
+#website-root{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#nav-bar{
+}
+#page-content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
