@@ -2,7 +2,7 @@ interface Props {
   children: ReactNode;
 }
 
-import React, { Children, ReactNode } from "react";
+import { ReactNode } from "react";
 
 const NavBar = ({ children }: Props) => {
   return (
