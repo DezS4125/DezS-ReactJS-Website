@@ -17,7 +17,7 @@ const Card = ({
   href = "/",
 }: Props) => {
   return (
-    <div className="card" id={id}>
+    <div className="card inline" id={id}>
       <img src={img} className="card-img-top" alt="--No Image--" />
 
       <div className="card-body">
