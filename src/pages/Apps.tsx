@@ -6,7 +6,13 @@ const Apps = () => {
   return (
     <div id="apps-page-root">
       <GreyCenteredFlat id="greyTray">
-        <Card></Card>
+        <Card
+          title="To do List"
+          text="A to do description"
+          img="src/assets/todoIcon.png"
+          href="todolist"
+        ></Card>
+        <Card title="" text="" id="" img="" href=""></Card>
         <Card></Card>
       </GreyCenteredFlat>
     </div>

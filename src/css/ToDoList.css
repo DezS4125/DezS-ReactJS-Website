@@ -1,0 +1,33 @@
+#to-do-list-page-root{
+    background-image: url("../assets/kali-linux-wallpaper-v6.png");
+    background-size: cover;
+    background-position: center;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display:flex;
+}
+.big-grey-tray{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(139, 134, 134, 0.95);
+}
+
+#to-do-list-tray{
+    display: grid;
+    grid-template-areas: "sidebar content";
+    grid-template-columns: 1fr 3fr;
+}
+
+#to-do-list-sidebar{
+    grid-area: sidebar;
+    background-color: #242426;
+    border: 1px solid #2f2f34;
+}
+#to-do-list-content{
+    grid-area: content;
+    background-color: #242426;
+    border: 1px solid #2f2f34;
+
+}
