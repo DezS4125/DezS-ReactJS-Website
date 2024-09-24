@@ -5,6 +5,7 @@ import NavBar from "./components/NavBar";
 import Button from "./components/Button";
 import Apps from "./pages/Apps";
 import ToDoList from "./pages/ToDoList";
+import Test from "./pages/Test";
 
 import "./App.css";
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="apps" element={<Apps />} />
             <Route path="apps/todolist" element={<ToDoList />} />
+            <Route path="test" element={<Test />} />
           </Routes>
         </div>
       </Router>

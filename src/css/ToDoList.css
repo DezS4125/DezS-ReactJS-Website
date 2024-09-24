@@ -29,5 +29,10 @@
     grid-area: content;
     background-color: #242426;
     border: 1px solid #2f2f34;
+    color: white;
 
+}
+
+#test{
+    color: white;
 }
